@@ -284,11 +284,8 @@ footer{
   .hero-inner{padding-bottom:5svh}
 }
 @media (prefers-reduced-motion:reduce){
-  *{animation:none!important;transition:none!important}
-  html{scroll-behavior:auto}
-  .reveal{opacity:1;transform:none}
-  .hero-photo{opacity:1}
-  .stat::before{transform:scaleX(1)}
+  .marquee div{animation:slide 45s linear infinite!important}
+}
 }
 </style>
 </head>
