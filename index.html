@@ -114,8 +114,9 @@ body.nav-open .menu-btn i:nth-child(3){transform:translateY(-7px) rotate(-45deg)
   content:"";position:absolute;inset:auto 0 0 0;height:64%;z-index:1;pointer-events:none;
   background:linear-gradient(to top,var(--bg) 4%,color-mix(in srgb,var(--bg) 80%,transparent) 44%,transparent 100%);
 }
-.photo-wrap{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateY(-9deg) rotateX(4deg)}
-.hero-photo{
+.photo-wrap{position:absolute;inset:0;transform-style:preserve-3d;animation:spin3d 10s linear infinite}
+@keyframes spin3d{from{transform:rotateY(0deg)}to{transform:rotateY(360deg)}}
+  .hero-photo{
   position:absolute;left:50%;bottom:0;height:min(92svh,940px);width:auto;
   transform:translateX(-50%) translateY(var(--py,0px));
   -webkit-mask-image:linear-gradient(to bottom,#000 74%,transparent 99%);
